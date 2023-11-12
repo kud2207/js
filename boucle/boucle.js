@@ -21,4 +21,8 @@ document.write('<br> parcourir un Tableau a ' )
     }
 
 
-    document.write('<br> parcourir un objet a ' )
+document.write('<br> parcourir un objet a <br>')
+
+    let obj = {nom : 'kageu', ages : 21 , profesion : 'ingenieur ' , loved : 'angela'}
+    document.write(obj[1])
+
