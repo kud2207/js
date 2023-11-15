@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableau</title>
+</head>
+<body>
+    <script>
+        var tabl =['bonjour' , 'tomate' , 'voiture' , 'angela']
+        document.write(tabl[0])
+        tabl[0]='ulrich'
+
+        document.write(`<br> ${tabl}`)
+
+        tabl[4]='kazzeu'
+        document.write(`<br> ${tabl.length}`)
+
+        tabl[5]= {
+            nom:'angela', classe:'TlA esp' , region:'centre', 
+            
+                 }
+                 document.write(`<br> ${tabl[5].nom}`)
+
+        var tabl2 = ['bonjour', {nom: 'KUD', age: 21},
+                                 function sup(){alert('bonjour')},
+                                 function (){return 2+3}];
+          document.write(`<br> ${tabl2[3]()}`)
+
+
+          /*ajoute et modification du tableau*/
+
+          var tab3 = ['kageu', 'djouche', 'auriol' , 'ulrich']
+          document.write(tab3.push(function names() {return 5+8   
+          }))
+          document.write('<br>' + tab3[4]())
+    </script>
+</body>
+</html>

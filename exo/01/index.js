@@ -5,11 +5,9 @@ function sommepaire (){
 
         for (var i =0 ; i<= (mesnombre.length -1); i++){
             if (mesnombre[i] % 2 == 0 ) { 
-                s += mesnombre[i];
-                  
+                s += mesnombre[i];                
                 }
         }
- 
         return s ;
 }
 
