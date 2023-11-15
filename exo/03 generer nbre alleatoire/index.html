@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>affiche des nombre au Hazar</h2>
+    <input type="button" value="click" id="demo">
+    <br>
+    <p id="affiche" style="background-color: aqua; width: 20px;"></p>
+
+    <br>
+    <br>
+
+    <h2>affiche les Fruits d'un tableau au Hazar  au Hazar</h2>
+    
+    <input type="button" value="fruit" id="demofruit">
+    <h2 id="fruit"></h2>
+ <script>
+var a =document.getElementById('demo')
+var aff =document.getElementById('affiche')
+
+   function f() {
+    aa =Math.round(Math.random()*10)
+    aff.innerHTML = aa
+    return aff  
+   }
+ a.addEventListener('click', f)
+
+
+ /*affiche des fruit au hazar*/
+
+var tabl = ['tomate', 'mangue' , 'orange', 'citron', 'avocat',
+            'serise','mandarine', 'fruit noir', 'banane' , 'concombre']
+
+            afruit = document.getElementById('fruit')
+            ademofruit = document.getElementById('demofruit')
+
+            function fruitt(){
+                nbr = Math.round(Math.random()*10)
+                afruit.innerHTML = tabl[nbr]
+                if (nbr<=2) {
+                    fruit.style.color = 'blue'
+                } 
+                 else if (nbr<=4) {
+                    fruit.style.color = 'orange'
+                } 
+
+                else if (nbr<=6) {
+                    fruit.style.color = 'yellow'
+                } 
+
+                else if (nbr<=8) {
+                    fruit.style.color = 'green'
+                } 
+
+                else{
+                    fruit.style.color = 'red'
+                }
+                return afruit
+
+            }
+
+            ademofruit.addEventListener('click', fruitt)
+</script>
+</body>
+</html>
