@@ -42,25 +42,26 @@ var tabl = ['tomate', 'mangue' , 'orange', 'citron', 'avocat',
             function fruitt(){
                 nbr = Math.round(Math.random()*10)
                 afruit.innerHTML = tabl[nbr]
-                if (nbr<=2) {
-                    fruit.style.color = 'blue'
-                } 
-                 else if (nbr<=4) {
-                    fruit.style.color = 'orange'
-                } 
+                    
+                    if (nbr<=2) {
+                        fruit.style.color = 'blue'
+                    } 
+                    else if (nbr<=4) {
+                        fruit.style.color = 'orange'
+                    } 
 
-                else if (nbr<=6) {
-                    fruit.style.color = 'yellow'
-                } 
+                    else if (nbr<=6) {
+                        fruit.style.color = 'yellow'
+                    } 
 
-                else if (nbr<=8) {
-                    fruit.style.color = 'green'
-                } 
+                    else if (nbr<=8) {
+                        fruit.style.color = 'green'
+                    } 
 
-                else{
-                    fruit.style.color = 'red'
-                }
-                return afruit
+                    else{
+                        fruit.style.color = 'red'
+                    }
+                    return afruit
 
             }
 

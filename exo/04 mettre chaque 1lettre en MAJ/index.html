@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maj</title>
+</head>
+<body>
+
+    <script>
+
+        /*entrz une phrase et chaque prmier lettre devient en majiscule*/
+        
+     var phrase = prompt('entrz une phrase')
+     let tabl2 = []
+        
+      a = String(phrase.toLowerCase())
+      tabl = a.split(' ')
+       tabl.forEach(tabl => {
+        let premier_lettre = tabl.charAt(0).toUpperCase();
+
+        let remplacement = tabl.replace(tabl.charAt(0), premier_lettre);
+
+        tabl2.push(remplacement)
+
+       });
+
+       document.write(tabl2.join(' '));
+     
+    </script>
+</body>
+</html>
