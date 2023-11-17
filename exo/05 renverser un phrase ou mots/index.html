@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inverse</title>
+</head>
+<body>
+    <script>
+        var mots = String(prompt('entrer un phrase'))
+
+        /*inverse avec l'autre d'arrivé*/
+        var tab1 = mots.split("").reverse().join("");
+
+        /*inverse juste les mots*/
+        var tab2 = (mots.split(" "))
+
+        for(i = 0 ; i<=tab2.length; i++ ){
+            aff += tab2[i]  
+        }
+       
+        document.write(tab2)
+        document.write('<br>' +aff)
+    </script>
+</body>
+</html>
